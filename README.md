@@ -19,10 +19,10 @@ dotnet new classlib -n TimeTravel.Movie.Orm
 cd TimeTravel.Movie.Orm
 ```
 
-make a directory called models
+Make a directory called models
 ```
 mkdir Models
-``
+```
 
 Add a reference to the Fluent NHibernate package
 ``` 
