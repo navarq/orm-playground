@@ -8,7 +8,7 @@ namespace TimeTravel.Movie.Query.Init
 {
     public interface IMapperSession
     {
-        void BeginTransation();
+        void BeginTransaction();
         Task Commit();
         Task Rollback();
         void CloseTransaction();

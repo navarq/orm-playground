@@ -17,7 +17,7 @@ namespace TimeTravel.Movie.Query.Init
             _session = session;
         }
 
-        public void BeginTransation()
+        public void BeginTransaction()
         {
             _transaction = _session.BeginTransaction();
         }
