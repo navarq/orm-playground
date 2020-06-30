@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:10
+    environment:
+      POSTGRES_DB: timetravelmovies
+      POSTGRES_USER: timetraveller
+      POSTGRES_PASSWORD: NH1b32thefree
+    expose:
+      - "5423"
+    restrart: unless-stopped
