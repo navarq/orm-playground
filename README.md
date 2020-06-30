@@ -41,5 +41,18 @@ dotnet new console
 
 Go up one and add reference to solution project
 ```
-dotnet sln orm-playground.sln add TimeTravel.Movie.Core/TimeTravel.Movie.Core.csproj
+dotnet sln orm-playground.sln add TimeTravel.Movie.Console/TimeTravel.Movie.Console.csproj
 ```
+
+```
+dotnet add package Npgsql -Version 4.1.3.1
+```
+
+```
+mkdir TimeTravel.Movie.Api
+```
+[Postgres Express drivers](https://www.devart.com/dotconnect/postgresql/download.html)
+
+# get free version
+
+# restart visual stuidio after installation

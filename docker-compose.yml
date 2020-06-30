@@ -5,7 +5,9 @@ services:
     environment:
       POSTGRES_DB: timetravelmovies
       POSTGRES_USER: timetraveller
-      POSTGRES_PASSWORD: NH1b32thefree
+      POSTGRES_PASSWORD: 
+    ports:
+      - "5432:5432"
     expose:
-      - "5423"
-    restrart: unless-stopped
+      - "6543"
+    restart: unless-stopped

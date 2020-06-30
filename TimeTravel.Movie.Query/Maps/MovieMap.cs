@@ -6,7 +6,7 @@ namespace TimeTravel.Movie.Query.Maps
     {
         public MovieMap()
         {
-            Table("Movies");
+            Table("movies");
             Id(x => x.Id, "MovieId").GeneratedBy.Assigned();
             Map(x=>x.Name).Not.Nullable();
             Map(x => x.ReleaseDate).Not.Nullable();

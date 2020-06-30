@@ -13,4 +13,13 @@
     <ProjectReference Include="..\TimeTravel.Movie.Core\TimeTravel.Movie.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Devart.Data">
+      <HintPath>..\dll\Devart.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Devart.Data.PostgreSql">
+      <HintPath>..\dll\Devart.Data.PostgreSql.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

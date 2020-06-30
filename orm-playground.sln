@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTravel.Movie.Query", "TimeTravel.Movie.Query\TimeTravel.Movie.Query.csproj", "{789A9D08-A13C-4D1E-A761-727D45E9F664}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeTravel.Movie.Query", "TimeTravel.Movie.Query\TimeTravel.Movie.Query.csproj", "{789A9D08-A13C-4D1E-A761-727D45E9F664}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTravel.Movie.Core", "TimeTravel.Movie.Core\TimeTravel.Movie.Core.csproj", "{7B0C81B1-21EE-4B3B-9065-4D02500D5529}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeTravel.Movie.Core", "TimeTravel.Movie.Core\TimeTravel.Movie.Core.csproj", "{7B0C81B1-21EE-4B3B-9065-4D02500D5529}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTravel.Movie.Console", "TimeTravel.Movie.Console\TimeTravel.Movie.Console.csproj", "{B3E6F23F-D7F5-4055-96AF-C2299E335F77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeTravel.Movie.Console", "TimeTravel.Movie.Console\TimeTravel.Movie.Console.csproj", "{B3E6F23F-D7F5-4055-96AF-C2299E335F77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTravel.Movie.Api", "TimeTravel.Movie.Api\TimeTravel.Movie.Api.csproj", "{7BCCAB20-F9C9-4079-BBB7-A7A4A9779D99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,9 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{789A9D08-A13C-4D1E-A761-727D45E9F664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -58,5 +57,23 @@ Global
 		{B3E6F23F-D7F5-4055-96AF-C2299E335F77}.Release|x64.Build.0 = Release|Any CPU
 		{B3E6F23F-D7F5-4055-96AF-C2299E335F77}.Release|x86.ActiveCfg = Release|Any CPU
 		{B3E6F23F-D7F5-4055-96AF-C2299E335F77}.Release|x86.Build.0 = Release|Any CPU
+		{7BCCAB20-F9C9-4079-BBB7-A7A4A9779D99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BCCAB20-F9C9-4079-BBB7-A7A4A9779D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BCCAB20-F9C9-4079-BBB7-A7A4A9779D99}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7BCCAB20-F9C9-4079-BBB7-A7A4A9779D99}.Debug|x64.Build.0 = Debug|Any CPU
+		{7BCCAB20-F9C9-4079-BBB7-A7A4A9779D99}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7BCCAB20-F9C9-4079-BBB7-A7A4A9779D99}.Debug|x86.Build.0 = Debug|Any CPU
+		{7BCCAB20-F9C9-4079-BBB7-A7A4A9779D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BCCAB20-F9C9-4079-BBB7-A7A4A9779D99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BCCAB20-F9C9-4079-BBB7-A7A4A9779D99}.Release|x64.ActiveCfg = Release|Any CPU
+		{7BCCAB20-F9C9-4079-BBB7-A7A4A9779D99}.Release|x64.Build.0 = Release|Any CPU
+		{7BCCAB20-F9C9-4079-BBB7-A7A4A9779D99}.Release|x86.ActiveCfg = Release|Any CPU
+		{7BCCAB20-F9C9-4079-BBB7-A7A4A9779D99}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9B4162D-52DF-4725-A229-DF378EE4F7F6}
 	EndGlobalSection
 EndGlobal
