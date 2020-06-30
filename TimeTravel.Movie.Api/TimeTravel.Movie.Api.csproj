@@ -8,5 +8,9 @@
     <PackageReference Include="FluentNHibernate" Version="2.1.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TimeTravel.Movie.Console\TimeTravel.Movie.Init.csproj" />
+  </ItemGroup>
+
 
 </Project>

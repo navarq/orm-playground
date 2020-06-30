@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeTravel.Movie.Query", "T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeTravel.Movie.Core", "TimeTravel.Movie.Core\TimeTravel.Movie.Core.csproj", "{7B0C81B1-21EE-4B3B-9065-4D02500D5529}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeTravel.Movie.Console", "TimeTravel.Movie.Console\TimeTravel.Movie.Console.csproj", "{B3E6F23F-D7F5-4055-96AF-C2299E335F77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeTravel.Movie.Init", "TimeTravel.Movie.Console\TimeTravel.Movie.Init.csproj", "{B3E6F23F-D7F5-4055-96AF-C2299E335F77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTravel.Movie.Api", "TimeTravel.Movie.Api\TimeTravel.Movie.Api.csproj", "{7BCCAB20-F9C9-4079-BBB7-A7A4A9779D99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeTravel.Movie.Api", "TimeTravel.Movie.Api\TimeTravel.Movie.Api.csproj", "{7BCCAB20-F9C9-4079-BBB7-A7A4A9779D99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,7 +1,7 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using NHibernate.Cfg;
+﻿using FluentNHibernate.Cfg;
+using FluentNHibernate.Cfg.Db;
+using Microsoft.Extensions.DependencyInjection;
 using NHibernate.Cfg.MappingSchema;
-using NHibernate.Dialect;
 using NHibernate.Mapping.ByCode;
 using TimeTravel.Movie.Query.Init;
 
@@ -9,22 +9,22 @@ namespace TimeTravel.Movie.Console.Extension
 {
     public static class NHibernateExtensions
     {
-        public static IServiceCollection AddHibernate(this IServiceCollection services, string connectionString)
+        public static IServiceCollection AddHibernate(this IServiceCollection services)
         {
             var mapper = new ModelMapper();
             mapper.AddMappings(typeof(NHibernateExtensions).Assembly.ExportedTypes);
             HbmMapping domainMapping = mapper.CompileMappingForAllExplicitlyAddedEntities();
 
-            var configuration = new Configuration();
-            configuration.DataBaseIntegration(c =>
-                {
-                    c.Dialect<PostgreSQLDialect>();
-                    c.ConnectionString = connectionString;
-                    c.KeywordsAutoImport = Hbm2DDLKeyWords.AutoQuote;
-                    c.SchemaAction = SchemaAutoAction.Validate;
-                    c.LogFormattedSql = true;
-                    c.LogSqlInConsole = true;
-                });
+            var configuration = Fluently.Configure()
+                .Database(PostgreSQLConfiguration.Standard
+                    .ConnectionString(cs =>
+                        cs.Host("localhost")
+                            .Database("timetravelmovies")
+                            .Username("timetraveller")
+                            .Password("")
+                            .Port(5432)))
+                .Mappings(m => m.FluentMappings.AddFromAssemblyOf<TimeTravel.Movie.Query.Maps.MovieMap>())
+                .BuildConfiguration();
 
             configuration.AddMapping(domainMapping);
 

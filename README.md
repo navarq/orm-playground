@@ -24,35 +24,30 @@ Make a directory called models
 mkdir Models
 ```
 
+```
+mkdir TimeTravel.Movie.Api
+```
+
+
+Create the webapi application
+```
+cd TimeTravel.Movie.Api
+dotnet new webapi
+```
+
 Add a reference to the Fluent NHibernate package
 ``` 
+dotnet add package Npgsql -Version 4.1.3.1
 dotnet add package FluentNHibernate -v 2.1.2
-```
-
-```
-mkdir TimeTravel.Movie.Console
-```
-
-
-Create the console application
-```
-dotnet new console
 ```
 
 Go up one and add reference to solution project
 ```
+cd ..
 dotnet sln orm-playground.sln add TimeTravel.Movie.Console/TimeTravel.Movie.Console.csproj
 ```
 
-```
-dotnet add package Npgsql -Version 4.1.3.1
-```
 
-```
-mkdir TimeTravel.Movie.Api
-```
-[Postgres Express drivers](https://www.devart.com/dotconnect/postgresql/download.html)
+don't forget to go into properties and change the launch settings json  to add the new api/movie route instead of WeatherForecast
 
-# get free version
 
-# restart visual stuidio after installation
