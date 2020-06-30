@@ -28,3 +28,18 @@ Add a reference to the Fluent NHibernate package
 ``` 
 dotnet add package FluentNHibernate -v 2.1.2
 ```
+
+```
+mkdir TimeTravel.Movie.Console
+```
+
+
+Create the console application
+```
+dotnet new console
+```
+
+Go up one and add reference to solution project
+```
+dotnet sln orm-playground.sln add TimeTravel.Movie.Core/TimeTravel.Movie.Core.csproj
+```
