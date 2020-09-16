@@ -21,7 +21,7 @@ namespace TimeTravel.Movie.Console.Extension
                         cs.Host("localhost")
                             .Database("timetravelmovies")
                             .Username("timetraveller")
-                            .Password("")
+                            .Password("itaintpossible")
                             .Port(5432)))
                 .Mappings(m => m.FluentMappings.AddFromAssemblyOf<TimeTravel.Movie.Query.Maps.MovieMap>())
                 .BuildConfiguration();
