@@ -51,3 +51,17 @@ dotnet sln orm-playground.sln add TimeTravel.Movie.Console/TimeTravel.Movie.Cons
 don't forget to go into properties and change the launch settings json  to add the new api/movie route instead of WeatherForecast
 
 
+To add trust to the app do
+```
+dotnet dev-certs https --trust
+```
+
+Select yes in the dialog to trust http://localhost:5001
+
+Then simple do the following to run the app
+```
+dotnet run
+```
+
+within then same folder ()
+

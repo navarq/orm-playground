@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   db:
-    image: postgres:10
+    container_name: ttdb
     environment:
       POSTGRES_DB: timetravelmovies
       POSTGRES_USER: timetraveller
@@ -10,4 +10,6 @@ services:
       - "5432:5432"
     expose:
       - "6543"
+    volumes:
+      - ./data:/data
     restart: unless-stopped
