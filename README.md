@@ -36,9 +36,12 @@ dotnet new webapi
 ```
 
 Add a reference to the Fluent NHibernate package
+And further references for NHibernate extensions
 ``` 
 dotnet add package Npgsql -Version 4.1.3.1
 dotnet add package FluentNHibernate -v 2.1.2
+dotnet add package Microsoft.Extensions.Configuration --version 3.1.9
+dotnet add package Microsoft.Extensions.DependencyInjection --version 3.1.9
 ```
 
 Go up one and add reference to solution project
@@ -46,7 +49,6 @@ Go up one and add reference to solution project
 cd ..
 dotnet sln orm-playground.sln add TimeTravel.Movie.Console/TimeTravel.Movie.Console.csproj
 ```
-
 
 don't forget to go into properties and change the launch settings json  to add the new api/movie route instead of WeatherForecast
 
